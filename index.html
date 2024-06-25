@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/f0c3ec821f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Weather</title>
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <img src="./images/logo.png" alt="" />
+            <div class="logo m-3 text-light">
+              <h1 class="fw-bold fs-6 pt-3 ms-0">Weather</h1>
+              <p><small>tagline goes here</small></p>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span><i class="fa-solid fa-bars text-light"></i></span>
+          </button>
+          <div
+            class="collapse navbar-collapse mx-5"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto text-center mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div>
+      <div class="input my-5 container-fluid">
+        <br /><br />
+        <div class="container">
+          <div class="d-flex input-div">
+            <input
+              type="text"
+              id="cityInput"
+              placeholder="Find your location"
+              class="form-control"
+            />
+            <button id="findBtn" class="btn btn-primary">Find</button>
+          </div>
+        </div>
+        <div class="container my-5 py-3">
+          <div class="row" id="rowCard">
+            <div class="col-md-4 rounded-3"></div>
+
+            <div class="col-md-4 rounded-3">
+              <div
+                class="header text-secondary d-flex justify-content-center p-3"
+              >
+                <span>Tuesday</span>
+              </div>
+
+              <div class="body py-3">
+                <div
+                  class="d-flex justify-content-center flex-column align-items-center"
+                >
+                  <i class="fa-regular fs-3 fa-sun text-warning py-3"></i>
+                  <h4 class="text-light py-5">35.2oC</h4>
+                  <p class="text-primary py-5">sunny</p>
+                  <br /><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="d-flex input-div py-5">
+              <input
+                type="text"
+                id="input"
+                placeholder="enter your email"
+                class="form-control"
+              />
+              <button class="btn btn-primary">Subscribe</button>
+            </div>
+          </div>
+
+          <div class="col-md-5">
+            <div class="py-4 icons">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa fa-google-plus"></i>
+              <i class="fa-brands fa-pinterest"></i>
+            </div>
+          </div>
+          <p class="text-light text-center">
+            Copyright 2024. Designed by
+            <span class="text-danger">Mohamed ELmasry</span>. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
